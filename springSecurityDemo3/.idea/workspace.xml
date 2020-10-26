@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a395cb7d-90d5-4292-b0c6-d047e46b7475" name="Default Changelist" comment="" />
+    <list default="true" id="a395cb7d-90d5-4292-b0c6-d047e46b7475" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssdemo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssdemo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssdemo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssdemo/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssdemo/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssdemo/ApplicationMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssdemo/ApplicationMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssdemo/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssdemo/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssdemo/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssdemo/controller/HelloController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1j9kIRDdnISlAG4eirexKFPqMg2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,9 +36,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssdemo.ApplicationMain" />
+      <module name="springSecurityDemo3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,5 +68,84 @@
       <screen x="45" y="23" width="1747" height="1097" />
     </state>
     <state x="520" y="238" width="813" height="666" key="#Project_Structure/45.23.1747.1097@45.23.1747.1097" timestamp="1603223810780" />
+    <state x="384" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603721145020">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="384" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/45.23.1747.1097@45.23.1747.1097" timestamp="1603721145020" />
+    <state x="733" y="284" key="#com.intellij.ide.util.MemberChooser" timestamp="1603722697601">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="733" y="284" key="#com.intellij.ide.util.MemberChooser/45.23.1747.1097@45.23.1747.1097" timestamp="1603722697601" />
+    <state x="657" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603721142842">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="657" y="365" key="#com.intellij.ide.util.TreeClassChooserDialog/45.23.1747.1097@45.23.1747.1097" timestamp="1603721142842" />
+    <state width="517" height="466" key="DebuggerActiveHint" timestamp="1603723566093">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="517" height="466" key="DebuggerActiveHint/45.23.1747.1097@45.23.1747.1097" timestamp="1603723566093" />
+    <state width="1702" height="373" key="GridCell.Tab.0.bottom" timestamp="1603730714562">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.0.bottom/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714562" />
+    <state width="1702" height="373" key="GridCell.Tab.0.center" timestamp="1603730714561">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.0.center/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714561" />
+    <state width="1702" height="373" key="GridCell.Tab.0.left" timestamp="1603730714561">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.0.left/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714561" />
+    <state width="1702" height="373" key="GridCell.Tab.0.right" timestamp="1603730714562">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.0.right/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714562" />
+    <state width="1702" height="373" key="GridCell.Tab.1.bottom" timestamp="1603730714563">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.1.bottom/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714563" />
+    <state width="1702" height="373" key="GridCell.Tab.1.center" timestamp="1603730714563">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.1.center/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714563" />
+    <state width="1702" height="373" key="GridCell.Tab.1.left" timestamp="1603730714562">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.1.left/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714562" />
+    <state width="1702" height="373" key="GridCell.Tab.1.right" timestamp="1603730714563">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state width="1702" height="373" key="GridCell.Tab.1.right/45.23.1747.1097@45.23.1747.1097" timestamp="1603730714563" />
+    <state x="458" y="235" key="Maven.ArtifactSearchDialog" timestamp="1603721643033">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="458" y="235" key="Maven.ArtifactSearchDialog/45.23.1747.1097@45.23.1747.1097" timestamp="1603721643033" />
+    <state x="549" y="275" key="NewModule_or_Project.wizard" timestamp="1603730708144">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="549" y="275" key="NewModule_or_Project.wizard/45.23.1747.1097@45.23.1747.1097" timestamp="1603730708144" />
+    <state x="497" y="302" width="845" height="538" key="find.popup" timestamp="1603719060438">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="497" y="302" width="845" height="538" key="find.popup/45.23.1747.1097@45.23.1747.1097" timestamp="1603719060438" />
+    <state x="570" y="295" width="700" height="530" key="recent.locations.popup" timestamp="1603719024322">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="570" y="295" width="700" height="530" key="recent.locations.popup/45.23.1747.1097@45.23.1747.1097" timestamp="1603719024322" />
+    <state x="585" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1603720051995">
+      <screen x="45" y="23" width="1747" height="1097" />
+    </state>
+    <state x="585" y="268" width="670" height="676" key="search.everywhere.popup/45.23.1747.1097@45.23.1747.1097" timestamp="1603720051995" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ssdemo/controller/HelloController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
