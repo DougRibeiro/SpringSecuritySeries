@@ -26,13 +26,13 @@ public class UsernamePasswordAuthProvider implements AuthenticationProvider {
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String username = authentication.getName();
         String password = (String) authentication.getCredentials();
-        UserDetails user = userDetailsService.loadUserByUsername(username);
 
-        if (passwordEncoder.matches(username, password)) {
+        UserDetails user = userDetailsService.loadUserByUsername(username);
+        if (passwordEncoder.matches(password, user.getPassword())) {
             return new UsernamePasswordAuthentication(username, password, user.getAuthorities());
         }
 
-        throw new BadCredentialsException("Wrong username password!");
+        throw new BadCredentialsException(":(");
     }
 
     @Override
