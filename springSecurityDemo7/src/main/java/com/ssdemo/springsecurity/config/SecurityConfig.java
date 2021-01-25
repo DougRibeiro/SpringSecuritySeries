@@ -1,7 +1,9 @@
 package com.ssdemo.springsecurity.config;
 
+import com.ssdemo.springsecurity.security.filter.TokenAuthFilter;
 import com.ssdemo.springsecurity.security.filter.UsernamePasswordAuthFilter;
 import com.ssdemo.springsecurity.security.providers.OtpAuthenticationProvider;
+import com.ssdemo.springsecurity.security.providers.TokenAuthProvider;
 import com.ssdemo.springsecurity.security.providers.UsernamePasswordAuthProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -23,8 +25,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private OtpAuthenticationProvider otpAuthenticationProvider;
 
+
     @Autowired
-    private UsernamePasswordAuthFilter usernamePasswordAuthFilter;
+    private TokenAuthProvider tokenAuthProvider;
 
 
     @Bean
@@ -32,16 +35,28 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return NoOpPasswordEncoder.getInstance();
     }
 
+    @Bean
+    public TokenAuthFilter tokentAuthFilter() {
+        return new TokenAuthFilter();
+    }
+
+    @Bean
+    public UsernamePasswordAuthFilter usernamePasswordAuthFilter() {
+        return new UsernamePasswordAuthFilter();
+    }
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) {
         auth.authenticationProvider(authProvider)
-                .authenticationProvider(otpAuthenticationProvider);
+                .authenticationProvider(otpAuthenticationProvider)
+                .authenticationProvider(tokenAuthProvider);
     }
 
     @Override
     protected void configure(HttpSecurity http) {
-        http.addFilterAt(usernamePasswordAuthFilter, BasicAuthenticationFilter.class);
+        http.addFilterAt(usernamePasswordAuthFilter(), BasicAuthenticationFilter.class)
+                .addFilterAfter(tokentAuthFilter(), BasicAuthenticationFilter.class);
     }
 
     @Override
