@@ -19,6 +19,15 @@ public class HelloController {
     @Async
     public String hello(Authentication authentication) {
 
+        Runnable r = ()->{
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+            System.out.println("from the thread = "+auth.getName());
+        };
+        ExecutorService service = Executors.newSingleThreadExecutor();
+        service.execute(r);
+        service.shutdown();
+
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
         System.out.println(authentication.getName());
