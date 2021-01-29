@@ -33,7 +33,6 @@ public class TokenAuthFilter extends OncePerRequestFilter {
 
         SecurityContextHolder.getContext().setAuthentication(a);
         filterChain.doFilter(request, response);
-
     }
 
     @Override

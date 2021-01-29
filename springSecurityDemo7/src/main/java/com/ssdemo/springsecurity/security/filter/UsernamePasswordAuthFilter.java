@@ -41,9 +41,13 @@ public class UsernamePasswordAuthFilter extends OncePerRequestFilter {
         if (otp == null) {
             Authentication auth = new UsernamePasswordAuthentication(username, password);
             authenticationManager.authenticate(auth);
-            otpRepository.save(Otp.builder().username(username).otp(String.valueOf(new Random().nextInt(9999) + 1000)).build());
+            Otp otpObject = new Otp();
+            otpObject.setUsername(username);
+            otpObject.setOtp(String.valueOf(new Random().nextInt(9999) + 1000));
+            otpRepository.save(otpObject);
+
         } else {
-            Authentication auth = new OtpAuthentication(username, password);
+            Authentication auth = new OtpAuthentication(username, otp);
             authenticationManager.authenticate(auth);
 
             final String token = UUID.randomUUID().toString();
