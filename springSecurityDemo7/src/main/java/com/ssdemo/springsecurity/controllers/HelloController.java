@@ -7,7 +7,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.lang.reflect.Executable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -19,14 +18,20 @@ public class HelloController {
     @Async
     public String hello(Authentication authentication) {
 
-        Runnable r = ()->{
+        Runnable r = () -> {
             Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
-            System.out.println("from the thread = "+auth.getName());
+            System.out.println("from the thread = " + auth.getName());
         };
         ExecutorService service = Executors.newSingleThreadExecutor();
         service.execute(r);
         service.shutdown();
+
+        //        DelegatingSecurityContextRunnable dr = new DelegatingSecurityContextRunnable(r);
+
+        //        DelegatingSecurityContextExecutorService dService =
+        //                new DelegatingSecurityContextExecutorService(service);
+
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
